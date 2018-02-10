@@ -9,6 +9,19 @@ namespace OneBudget.Model.Common
     public static partial class IListExtensions
     {
         /// <summary>
+        /// Gets an entity by its ID.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="list"></param>
+        /// <param name="id">The ID of the entity to retrieve.</param>
+        /// <returns></returns>
+        public static T GetById<T>(this IList<T> list, Guid id)
+            where T : IEntity
+        {
+            return list.FirstOrDefault(x => x.Id.Equals(id));
+        }
+
+        /// <summary>
         /// Removes an entity based on the entity's ID.
         /// </summary>
         /// <param name="list"></param>
