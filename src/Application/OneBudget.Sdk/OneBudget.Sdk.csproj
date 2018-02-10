@@ -10,7 +10,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Commands\SaveBankAccount\" />
     <Folder Include="Queries\" />
   </ItemGroup>
 
