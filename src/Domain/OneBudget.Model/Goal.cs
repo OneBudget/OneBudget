@@ -12,6 +12,7 @@ namespace OneBudget.Model
         public string Color { get; set; }
         public DateTimeOffset Date { get; set; }
         public string Name { get; set; }
+        public string Notes { get; set; }
         public GoalType Type { get; set; }
     }
 }

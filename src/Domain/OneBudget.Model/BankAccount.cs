@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 using OneBudget.Model.Common;
 
@@ -14,5 +12,6 @@ namespace OneBudget.Model
         public string Name { get; set; }
         public string Notes { get; set; }
         public decimal OpeningBalance { get; set; }
+        public BankAccountType Type { get; set; }
     }
 }

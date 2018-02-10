@@ -13,9 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{7FAA25
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{9D15F7F8-9928-48EA-A505-F8998C9BE5AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneBudget.Model", "Domain\OneBudget.Model\OneBudget.Model.csproj", "{7BA40991-97A9-4A94-9B7B-884F050E00AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBudget.Model", "Domain\OneBudget.Model\OneBudget.Model.csproj", "{7BA40991-97A9-4A94-9B7B-884F050E00AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneBudget.Sdk.Abstractions", "Application\OneBudget.Sdk.Abstractions\OneBudget.Sdk.Abstractions.csproj", "{612442AA-865F-4DC4-8499-47EC889D0656}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBudget.Sdk.Abstractions", "Application\OneBudget.Sdk.Abstractions\OneBudget.Sdk.Abstractions.csproj", "{612442AA-865F-4DC4-8499-47EC889D0656}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneBudget.Sdk", "Application\OneBudget.Sdk\OneBudget.Sdk.csproj", "{AA5A4D49-ED4C-4DEC-ADB3-72F6DA13FD00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 		{612442AA-865F-4DC4-8499-47EC889D0656}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{612442AA-865F-4DC4-8499-47EC889D0656}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{612442AA-865F-4DC4-8499-47EC889D0656}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA5A4D49-ED4C-4DEC-ADB3-72F6DA13FD00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5A4D49-ED4C-4DEC-ADB3-72F6DA13FD00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5A4D49-ED4C-4DEC-ADB3-72F6DA13FD00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5A4D49-ED4C-4DEC-ADB3-72F6DA13FD00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,6 +44,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7BA40991-97A9-4A94-9B7B-884F050E00AC} = {459E17CF-B6AB-4AEF-B0F4-A7018DCC9690}
 		{612442AA-865F-4DC4-8499-47EC889D0656} = {D214B1F0-C1CD-470C-935B-BC9E75BB3627}
+		{AA5A4D49-ED4C-4DEC-ADB3-72F6DA13FD00} = {D214B1F0-C1CD-470C-935B-BC9E75BB3627}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10C48913-1A53-4575-BD7F-F09CD89D81CE}

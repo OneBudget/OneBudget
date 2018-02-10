@@ -7,11 +7,9 @@ namespace OneBudget.Model
 {
     public class Transaction : IEntity
     {
-        private readonly IList<Tag> _tags;
-
         public Transaction()
         {
-            _tags = new List<Tag>();
+            Tags = new List<Tag>();
         }
 
         public Guid Id { get; set; }
@@ -22,17 +20,8 @@ namespace OneBudget.Model
         public Category Category { get; set; }
         public DateTimeOffset DateCleared { get; set; }
         public DateTimeOffset DateCreated { get; set; }
+        public DateTimeOffset DateCreatedFor { get; set; }
         public string Notes { get; set; }
-        public IEnumerable<Tag> Tags { get { return _tags; } }
-
-        public void AddTag(Tag tag)
-        {
-            _tags.Add(tag);
-        }
-
-        public void RemoveTag(Guid id)
-        {
-            _tags.RemoveById(id);
-        }
+        public List<Tag> Tags { get; set; }
     }
 }
