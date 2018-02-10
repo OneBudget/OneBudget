@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{459E17CF-B6AB-4AEF-B0F4-A7018DCC9690}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{D214B1F0-C1CD-470C-935B-BC9E75BB3627}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{2E7881AD-1C66-498D-A427-05ADB83C7247}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{7FAA255D-40E1-4E66-88F2-7380C99841BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{9D15F7F8-9928-48EA-A505-F8998C9BE5AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneBudget.Model", "Domain\OneBudget.Model\OneBudget.Model.csproj", "{7BA40991-97A9-4A94-9B7B-884F050E00AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneBudget.Sdk.Abstractions", "Application\OneBudget.Sdk.Abstractions\OneBudget.Sdk.Abstractions.csproj", "{612442AA-865F-4DC4-8499-47EC889D0656}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BA40991-97A9-4A94-9B7B-884F050E00AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BA40991-97A9-4A94-9B7B-884F050E00AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BA40991-97A9-4A94-9B7B-884F050E00AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BA40991-97A9-4A94-9B7B-884F050E00AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{612442AA-865F-4DC4-8499-47EC889D0656}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{612442AA-865F-4DC4-8499-47EC889D0656}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{612442AA-865F-4DC4-8499-47EC889D0656}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{612442AA-865F-4DC4-8499-47EC889D0656}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7BA40991-97A9-4A94-9B7B-884F050E00AC} = {459E17CF-B6AB-4AEF-B0F4-A7018DCC9690}
+		{612442AA-865F-4DC4-8499-47EC889D0656} = {D214B1F0-C1CD-470C-935B-BC9E75BB3627}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10C48913-1A53-4575-BD7F-F09CD89D81CE}
+	EndGlobalSection
+EndGlobal
