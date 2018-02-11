@@ -3,21 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{459E17CF-B6AB-4AEF-B0F4-A7018DCC9690}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Model", "Model", "{459E17CF-B6AB-4AEF-B0F4-A7018DCC9690}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{D214B1F0-C1CD-470C-935B-BC9E75BB3627}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sdk", "Sdk", "{D214B1F0-C1CD-470C-935B-BC9E75BB3627}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{2E7881AD-1C66-498D-A427-05ADB83C7247}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBudget.Model", "Model\OneBudget.Model\OneBudget.Model.csproj", "{7BA40991-97A9-4A94-9B7B-884F050E00AC}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{7FAA255D-40E1-4E66-88F2-7380C99841BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBudget.Sdk.Abstractions", "Sdk\OneBudget.Sdk.Abstractions\OneBudget.Sdk.Abstractions.csproj", "{612442AA-865F-4DC4-8499-47EC889D0656}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{9D15F7F8-9928-48EA-A505-F8998C9BE5AD}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBudget.Model", "Domain\OneBudget.Model\OneBudget.Model.csproj", "{7BA40991-97A9-4A94-9B7B-884F050E00AC}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBudget.Sdk.Abstractions", "Application\OneBudget.Sdk.Abstractions\OneBudget.Sdk.Abstractions.csproj", "{612442AA-865F-4DC4-8499-47EC889D0656}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBudget.Sdk", "Application\OneBudget.Sdk\OneBudget.Sdk.csproj", "{AA5A4D49-ED4C-4DEC-ADB3-72F6DA13FD00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBudget.Sdk", "Sdk\OneBudget.Sdk\OneBudget.Sdk.csproj", "{AA5A4D49-ED4C-4DEC-ADB3-72F6DA13FD00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

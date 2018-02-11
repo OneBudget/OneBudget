@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Domain\OneBudget.Model\OneBudget.Model.csproj" />
+    <ProjectReference Include="..\..\Model\OneBudget.Model\OneBudget.Model.csproj" />
   </ItemGroup>
 
 </Project>
