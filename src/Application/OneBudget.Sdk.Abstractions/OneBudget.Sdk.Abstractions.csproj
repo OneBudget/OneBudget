@@ -9,8 +9,4 @@
     <ProjectReference Include="..\..\Domain\OneBudget.Model\OneBudget.Model.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Queries\" />
-  </ItemGroup>
-
 </Project>

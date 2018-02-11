@@ -1,8 +1,9 @@
 ﻿using System.Threading.Tasks;
 
+using AutoMapper;
+
 using OneBudget.Model;
 using OneBudget.Model.Common;
-using OneBudget.Model.Common.Mapping;
 using OneBudget.Sdk.Persistence;
 
 namespace OneBudget.Sdk.Commands
@@ -11,14 +12,17 @@ namespace OneBudget.Sdk.Commands
     {
         private readonly IBudgetAllocationRepository _budgetAllocationRepository;
         private readonly IBudgetRepository _budgetRepository;
+        private readonly IMapper _mapper;
 
         public SaveBudgetAllocationCommand(
             IBudgetAllocationRepository budgetAllocationRepository,
-            IBudgetRepository budgetRepository
+            IBudgetRepository budgetRepository,
+            IMapper mapper
             )
         {
             _budgetAllocationRepository = budgetAllocationRepository;
             _budgetRepository = budgetRepository;
+            _mapper = mapper;
         }
 
         public async Task Execute(SaveBudgetAllocationModel model)
@@ -26,7 +30,7 @@ namespace OneBudget.Sdk.Commands
             Budget budget = await _budgetRepository.Get(model.BudgetId);
             Category category = budget.Categories.GetById(model.CategoryId);
 
-            BudgetAllocation allocation = EntityMapper.Map<SaveBudgetAllocationModel, BudgetAllocation>(model);
+            BudgetAllocation allocation = _mapper.Map<BudgetAllocation>(model);
             allocation.Budget = budget;
             allocation.Category = category;
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-using OneBudget.Model.Common.Mapping;
+using AutoMapper;
 
 namespace OneBudget.Model.Common
 {
@@ -55,7 +55,7 @@ namespace OneBudget.Model.Common
 
             else
             {
-                EntityMapper.Map(entity, existingEntity);
+                Mapper.Map(entity, existingEntity);
             }
         }
     }

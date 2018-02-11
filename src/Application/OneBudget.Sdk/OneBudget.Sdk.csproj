@@ -10,8 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Factories\" />
-    <Folder Include="Queries\" />
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
   </ItemGroup>
 
 </Project>
