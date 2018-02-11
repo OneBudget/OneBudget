@@ -19,9 +19,9 @@ namespace OneBudget.Sdk.Queries
             _mapper = mapper;
         }
 
-        public async Task<GetBudgetModel> Execute(Guid id)
+        public async Task<GetBudgetModel> Execute(Guid budgetId)
         {
-            Budget budget = await _budgetRepository.Get(id);
+            Budget budget = await _budgetRepository.Get(budgetId);
             GetBudgetModel model = _mapper.Map<GetBudgetModel>(budget);
 
             return model;

@@ -25,5 +25,6 @@ namespace OneBudget.Model
         public string Notes { get; set; }
         public List<Payee> Payees { get; set; }
         public List<Tag> Tags { get; set; }
+        public Tenant Tenant { get; set; }
     }
 }

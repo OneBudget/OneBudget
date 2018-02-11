@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBudget.Model", "Domain\O
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBudget.Sdk.Abstractions", "Application\OneBudget.Sdk.Abstractions\OneBudget.Sdk.Abstractions.csproj", "{612442AA-865F-4DC4-8499-47EC889D0656}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneBudget.Sdk", "Application\OneBudget.Sdk\OneBudget.Sdk.csproj", "{AA5A4D49-ED4C-4DEC-ADB3-72F6DA13FD00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OneBudget.Sdk", "Application\OneBudget.Sdk\OneBudget.Sdk.csproj", "{AA5A4D49-ED4C-4DEC-ADB3-72F6DA13FD00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

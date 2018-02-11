@@ -5,6 +5,6 @@ namespace OneBudget.Sdk.Queries
 {
     public interface IGetBudgetQuery
     {
-        Task<GetBudgetModel> Execute(Guid id);
+        Task<GetBudgetModel> Execute(Guid budgetId);
     }
 }
